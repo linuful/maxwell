@@ -42,3 +42,8 @@ benefits of event sourcing without having to re-architect your entire platform.
     "old":  {"daemon": "Stanislaw Lem"}
   }
 ```
+
+#### Compile Method：
+~~~
+mvn clean compile package -DskipTests=true -Dmaven.javadoc.skip=true
+~~~

@@ -84,8 +84,10 @@ public abstract class ColumnDef implements Cloneable {
 		case "date":
 			return new DateColumnDef(name, type, pos);
 		case "datetime":
+		return new DateTimeColumnDef(name, type, pos, columnLength);
 		case "timestamp":
-			return new DateTimeColumnDef(name, type, pos, columnLength);
+			return new TimeStampColumnDef(name, type, pos, columnLength);
+			//return new DateTimeColumnDef(name, type, pos, columnLength);
 		case "time":			
 			return new TimeColumnDef(name, type, pos, columnLength);
 		case "year":
